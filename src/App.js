@@ -37,6 +37,10 @@ let router = createBrowserRouter([
     children: [
       {
         path: "/",
+        element: <Products />,
+      },
+          {
+        path: "/home",
         element: <Home />,
       },
       {
