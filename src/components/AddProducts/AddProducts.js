@@ -10,23 +10,6 @@ const AddProducts = () => {
   let navigateTo = useNavigate();
   let submitForm = (e) => {
     e.preventDefault();
-    console.log(title);
-    console.log(description);
-    console.log(imgUrl);
-    console.log(price);
-    // fetch("http://localhost:3000/products", {
-    //   method: "POST",
-    //   headers: {
-    //     "Content-Type": "application/json",
-    //     // 'Content-Type': 'application/x-www-form-urlencoded',
-    //   },
-    //   body: JSON.stringify({
-    //     title: title,
-    //     description: description,
-    //     image: imgUrl,
-    //     price: price
-    //   })
-    // }).then(res => res.json()).then(data => console.log(data))
     axios
       .post("https://apitest-c64g.onrender.com/products", {
         title: title,
@@ -35,11 +18,7 @@ const AddProducts = () => {
         price: price,
       })
       .then((data) => navigateTo("/products"));
-    // }).then(data => console.log(data.data))
-    // re.current.click()
   };
-
-  // console.log(re.current);
   return (
     <>
       <h1>AddProducts</h1>
