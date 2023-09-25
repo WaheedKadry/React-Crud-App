@@ -6,7 +6,7 @@ const ProductDetails = () => {
     let { productid } = useParams()
 
     useEffect(() => {
-        fetch(`http://localhost:3000/products/${productid}`)
+        fetch(`https://apitest-c64g.onrender.com/products/${productid}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [])
