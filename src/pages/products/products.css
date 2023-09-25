@@ -1,0 +1,34 @@
+table.table.table-striped tbody td {
+    max-width: 100px !important;
+}
+table.table.table-striped tbody td.price {
+        max-width: 50px !important;
+        padding: 20px !important;
+    }
+    .swal2-popup.swal2-modal.swal2-show {
+        padding: 20px !important;
+    }
+    h2#swal2-title {
+        margin: 20px auto !important;
+        color: red !important;
+    }
+    .swal2-actions {
+        gap: 20px !important;
+    }
+    button.swal2-confirm.swal2-styled {
+        padding: 10px 20px !important;
+        background: red !important;
+        color: #fff;
+    }
+    button.swal2-confirm.swal2-styled:hover {
+        background: rgb(160, 2, 2) !important;
+
+    }
+    div:where(.swal2-container) button:where(.swal2-styled).swal2-confirm:focus {
+        box-shadow: 0 0 0 3px rgba(250, 233, 0, 0.5);
+    }
+    button.swal2-cancel.swal2-styled{
+        padding: 10px 20px !important;
+
+    }
+    
